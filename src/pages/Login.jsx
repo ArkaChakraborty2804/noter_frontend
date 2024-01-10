@@ -11,10 +11,10 @@ const Register = () => {
 
     const handleLogin = async () => {
         try{
-            const res = await axios.get(`${URL}/login`,{email, password})
+            const res = await axios.post(`${URL}/login`,{email, password})
             setEmail(res.data.email)
             setPassword(res.data.password)
-            navigate('/login')
+            navigate('/')
             setError(false)
         }
         catch(err){
