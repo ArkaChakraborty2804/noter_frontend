@@ -11,7 +11,7 @@ const Register = () => {
 
     const handleLogin = async () => {
         try{
-            const res = await axios.post(`${URL}/login`,{email, password})
+            const res = await axios.post(`${URL}/login`,{email, password},{withCredentials:true})
             setEmail(res.data.email)
             setPassword(res.data.password)
             navigate('/dashboard')

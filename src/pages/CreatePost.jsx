@@ -5,7 +5,7 @@ const CreatePost = () => {
   return (
     <div>
         <div className='flex flex-row justify-between p-4 bg-black/85 h-20 space-x-4 px-8 items-center'>
-            <h3 className='text-lg items-center text-white font-semibold'><Link to='/'>Notation</Link></h3>
+            <h3 className='text-lg items-center text-white font-semibold'><Link to='/dashboard'>Notation</Link></h3>
         </div>
         <div className='bg-gray-50 w-[100%]'>
             <div className='flex flex-row p-8'>
