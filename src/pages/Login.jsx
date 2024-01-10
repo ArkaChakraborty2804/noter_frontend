@@ -14,7 +14,7 @@ const Register = () => {
             const res = await axios.post(`${URL}/login`,{email, password})
             setEmail(res.data.email)
             setPassword(res.data.password)
-            navigate('/')
+            navigate('/dashboard')
             setError(false)
         }
         catch(err){
