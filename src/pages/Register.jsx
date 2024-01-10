@@ -12,7 +12,7 @@ const Register = () => {
 
   const handleRegister = async () => {
     try{
-      const res = await axios.post(`${URL}/api/auth/signup`,{username, email, password})
+      const res = await axios.post(`${URL}signup`,{username, email, password})
       setUsername(res.data.username)
       setEmail(res.data.email)
       setPassword(res.data.password)
